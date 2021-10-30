@@ -1,9 +1,9 @@
-const exp = require('./pow.test.js');
+const pow = require('./pow.js');
 
-describe('exp', () => {
+describe('pow', () => {
   it('should return the exponent answer', () => {
-    const answer = exp(3, 3);
-    expect(answer).toEqual(27);
-    console.log(answer);
+    const base = '5';
+    const exponent = '7';
+    expect(pow(base, exponent)).toEqual(78125);
   });
 });
